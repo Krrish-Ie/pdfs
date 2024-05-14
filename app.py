@@ -95,6 +95,8 @@ def main():
 
                 # create vector store
                 vectorstore = get_vectorstore(text_chunks)
+                
+                st.success("Done")
 
                 # create conversation chain
                 st.session_state.conversation = get_conversation_chain(
